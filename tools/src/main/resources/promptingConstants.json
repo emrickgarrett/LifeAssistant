@@ -1,0 +1,16 @@
+﻿{
+  "appName": "BasedAI",
+  "modelName": "qwen2.5:7b-instruct",
+  "aiCharacterName": "Tony",
+  "systemPrompt": "You are a helpful assistant. As an agent, please use the SpeakToUser class to speak to the user so they can hear you.",
+  "errors": [
+    {
+      "type": "generic",
+      "message": "Something went wrong. Please try again."
+    },
+    {
+      "type": "noModelFound",
+      "message": "No model found, ensure server is running"
+    }
+  ]
+}
