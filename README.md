@@ -1,4 +1,4 @@
-# BasedAI
+# LifeAssistant
 
 This project is just going to be a general purpose AI built in to work with a local ollama instance. For now, it connects to a local qwen for me, feel free to change your local AI in Ollama (but make sure it can use tools if you want tools).
 
