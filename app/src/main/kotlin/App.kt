@@ -16,6 +16,8 @@ import ai.koog.prompt.executor.ollama.client.OllamaClient
 import ai.koog.prompt.executor.ollama.client.toLLModel
 import kotlinx.coroutines.runBlocking
 import configuration.PromptingConfiguration
+import tools.DateTimeTool
+import tools.WeatherTool
 
 fun main() = runBlocking {
     val ollamaModel = OllamaClient().getModelOrNull(PromptingConfiguration.config.modelName)
@@ -24,6 +26,8 @@ fun main() = runBlocking {
     // TODO add various tools I create
     val toolRegistry = ToolRegistry {
         tool(SpeakToUser)
+        tool(DateTimeTool)
+        tool(WeatherTool)
     }
 
     val myStrategy = strategy<String, String>("basedAI-strategy") {
@@ -56,7 +60,7 @@ fun main() = runBlocking {
     }
 
     runBlocking {
-        val result = agent.run("Hey Tony, why is there a drunk Karen bragging about how lounges in Paris are better? Happening right now at the airport")
+        val result = agent.run("Hey Tony, whats the hourly forecast for Dayton?")
         println("agentic result: " + result)
     }
 }

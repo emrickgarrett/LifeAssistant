@@ -33,6 +33,7 @@ public object SpeakToUser : SimpleTool<SpeakToUser.Args>() {
         ),
     )
 
+    // TODO send this through some other system so I can output it into multiple formats/places
     override suspend fun doExecute(args: Args): String {
         println("${PromptingConfiguration.config.aiCharacterName} says: ${args.message}")
         return "Message Sent."

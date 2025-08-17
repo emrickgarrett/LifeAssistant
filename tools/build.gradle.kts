@@ -16,6 +16,7 @@ dependencies {
 
     // Add the serialization runtime (JSON format)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+    implementation("io.ktor:ktor-client-core:2.3.12")
 
 
     //test implementations

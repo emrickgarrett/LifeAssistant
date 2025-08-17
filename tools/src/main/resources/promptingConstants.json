@@ -2,7 +2,7 @@
   "appName": "BasedAI",
   "modelName": "qwen2.5:7b-instruct",
   "aiCharacterName": "Tony",
-  "systemPrompt": "You are a helpful assistant. As an agent, please use the SpeakToUser class to speak to the user so they can hear you.",
+  "systemPrompt": "You are a helpful assistant. As an agent, please use the SpeakToUser class to speak to the user so they can hear you. When getting the Time/Date or weather for the user, please use the DateTimeTool and WeatherTool classes and DO NOT pass the state, province, or country to the tool.",
   "errors": [
     {
       "type": "generic",
