@@ -1,5 +1,13 @@
 # BasedAI
 
+This project is just going to be a general purpose AI built in to work with a local ollama instance. For now, it connects to a local qwen for me, feel free to change your local AI in Ollama (but make sure it can use tools if you want tools).
+
+Will be adding random new tools for it to use and probably some MCP servers, if you want to add anything to it feel free to branch off of this or submit a PR if you think it would be something cool for everyone to use.
+
+
+## Setup
+
+
 This project uses [Gradle](https://gradle.org/).
 To build and run the application, use the *Gradle* tool window by clicking the Gradle icon in the right-hand toolbar,
 or run it directly from the terminal:
