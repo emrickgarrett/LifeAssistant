@@ -11,8 +11,9 @@ plugins {
 dependencies {
     // Project "app" depends on project "utils". (Project paths are separated with ":", so ":utils" refers to the top-level "utils" project.)
     implementation(project(":utils"))
-    implementation("ai.koog:koog-agents:0.3.0")
     implementation(project(":tools"))
+
+    implementation("ai.koog:koog-agents:0.3.0")
 
     // Add the serialization runtime (JSON format)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")

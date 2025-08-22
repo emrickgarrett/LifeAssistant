@@ -20,6 +20,12 @@ import tools.DateTimeTool
 import tools.WeatherTool
 
 fun main() = runBlocking {
+    val agent = generateAgent()
+    val result = agent.run("Hey Tony")
+    println("agentic result: " + result)
+}
+
+suspend fun generateAgent(): AIAgent<String, String> {
     val ollamaModel = OllamaClient().getModelOrNull(PromptingConfiguration.config.modelName)
         ?: error(PromptingConfiguration.config.errors[0].message) // todo split those errors out into accessible constants
 
@@ -59,8 +65,5 @@ fun main() = runBlocking {
         }
     }
 
-    runBlocking {
-        val result = agent.run("Hey Tony, whats the hourly forecast for Dayton?")
-        println("agentic result: " + result)
-    }
+    return agent
 }

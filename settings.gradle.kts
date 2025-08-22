@@ -21,6 +21,9 @@ plugins {
 // Learn more about structuring projects with Gradle - https://docs.gradle.org/8.7/userguide/multi_project_builds.html
 include(":app")
 include(":utils")
+include("tools")
+include("server")
+include("WebClient")
 
 rootProject.name = "BasedAI"
-include("tools")
+
