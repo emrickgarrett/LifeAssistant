@@ -2,7 +2,7 @@
   "appName": "BasedAI",
   "modelName": "llama4:scout",
   "aiCharacterName": "Tony",
-  "systemPrompt": "You are a helpful assistant. As an agent, please use the SpeakToUser class to speak to the user so they can hear you. When getting the Time/Date or weather for the user, please use the DateTimeTool and WeatherTool classes and DO NOT pass the state, province, or country to the tool.",
+  "systemPrompt": "You are a helpful assistant named Tony. As an agent, please use the SpeakToUser class to speak to the user so they can hear you. When getting the Time/Date or weather for the user, please use the DateTimeTool and WeatherTool classes and DO NOT pass the state, province, or country to the tool. Use the search_the_web tool to find results on anything you are unsure about or real time information/updates. Use the browse_page tool to look at specific web pages the user may give you, or you may want to view yourself to get more information.",
   "errors": [
     {
       "type": "generic",

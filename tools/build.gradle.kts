@@ -17,6 +17,7 @@ dependencies {
     // Add the serialization runtime (JSON format)
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     implementation("io.ktor:ktor-client-core:2.3.12")
+    implementation("org.jsoup:jsoup:1.17.2")
 
 
     //test implementations

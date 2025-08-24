@@ -16,8 +16,10 @@ import ai.koog.prompt.executor.ollama.client.OllamaClient
 import ai.koog.prompt.executor.ollama.client.toLLModel
 import kotlinx.coroutines.runBlocking
 import configuration.PromptingConfiguration
+import tools.BrowsePageTool
 import tools.DateTimeTool
 import tools.WeatherTool
+import tools.WebSearchTool
 
 fun main() = runBlocking {
     val agent = generateAgent()
@@ -34,6 +36,8 @@ suspend fun generateAgent(): AIAgent<String, String> {
         tool(SpeakToUser)
         tool(DateTimeTool)
         tool(WeatherTool)
+        tool(WebSearchTool)
+        tool(BrowsePageTool)
     }
 
     val myStrategy = strategy<String, String>("basedAI-strategy") {
