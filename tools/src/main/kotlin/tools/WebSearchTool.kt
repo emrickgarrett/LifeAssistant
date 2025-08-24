@@ -34,7 +34,7 @@ object WebSearchTool : SimpleTool<WebSearchTool.Args>() {
 
     override val descriptor: ToolDescriptor = ToolDescriptor(
         name = "search_the_web",
-        description = "Searches the web for information on a given query using Brave Search API. Returns top results with titles, descriptions, and URLs. Use this when you need real-time or external knowledge. Max 20 results.",
+        description = "Searches the web for information on a given query using Brave Search API. Use this when you need real-time or external knowledge. Max 20 results.",
         requiredParameters = listOf(
             ToolParameterDescriptor(
                 "query",
