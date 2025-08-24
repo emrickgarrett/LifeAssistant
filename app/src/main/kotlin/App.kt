@@ -60,6 +60,7 @@ suspend fun generateAgent(): AIAgent<String, String> {
         llmModel = ollamaModel.toLLModel(),
         toolRegistry = toolRegistry,
         strategy = myStrategy,
+        maxIterations = 30,
     ) {
         handleEvents {
             onAgentRunError { error -> println(error) }
